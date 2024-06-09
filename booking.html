@@ -1,0 +1,251 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habib Automotive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto&display=swap" rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0;
+            font-family: 'Bebas Neue', Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .header .logo img {
+            max-height: 80px;
+            margin-right: 20px;
+        }
+
+        .header a {
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px; 
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .header a.active {
+            background-color: rgb(255, 75, 30);
+            color: white;
+        }
+
+        .header-right {
+            display: flex;
+        }
+
+        @media screen and (max-width: 500px) {
+            .header {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+            .header a {
+                float: none;
+                display: block;
+                text-align: left;
+            }
+            .header .logo {
+                flex-direction: column;
+                align-items: flex-start;
+            }
+        }
+        .footer {
+            background-color: #222; /* Dark background for the footer */
+            color: #fff; /* White text color */
+            font-family: Arial, sans-serif;
+            padding: 40px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 0 10%;
+        }
+
+        .footer-section {
+            margin: 10px;
+        }
+
+        .footer-section h4 {
+            color: #ccc; /* Light gray for headings */
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #f00; /* Red on hover */
+        }
+
+        .footer-section p {
+            margin: 5px 0;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .social-icons a i {
+            font-size: 1.2em; /* Larger icons for social media */
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #333; /* Subtle top border for bottom area */
+            padding-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .footer .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-section {
+                margin-bottom: 20px;
+            }
+        }
+        .content {
+            display: flex;
+            justify-content: space-between; /* Aligns the form and the image side by side */
+            padding: 20px;
+            max-width: 1200px; /* Set a maximum width for the content area */
+            margin: 20px auto; /* Center the content horizontally */
+        }
+
+        .form-section {
+            flex: 1; /* Takes up half the space of the content area */
+        }
+
+        .image-section {
+            margin-top: 100px;
+            flex: 1; /* Takes up the other half */
+            text-align: center; /* Centers the image */
+        }
+
+        input[type="text"], input[type="date"] {
+            width: 90%; /* Relative width to the form-section */
+            padding: 10px;
+            margin: 8px 0;
+            border: 1px solid #ccc;
+            border-radius: 4px;
+            box-sizing: border inside;
+        }
+
+        input[type="text"]:focus, input[type="date"]:focus {
+            background-color: #f0f8ff;
+        }
+
+        .btn {
+            margin-top: 10px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">
+        <a href="index.html" class="logo">
+            <img src="logo.png" alt="Logo">
+            <p class="slogan">"Elevate Your Ride: Expert Detailing, Tinting, Tires, and Rims!”</p>       
+        </a>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="booking.html">Book An Appointment!</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </div>
+
+    <div class="content">
+        <div class="form-section">
+            <h1>Book <span style="color: red;">Service</span></h1>
+            <form>
+                <input type="text" id="fname" name="fname" value="Full Name"><br>
+                <input type="text" id="number" name="number" value="Phone Number"><br>
+                <input type="text" id="email" name="email" value="Email"><br>
+                <input type="text" id="service" name="service" value="Service"><br>
+                <input type="text" id="servicetech" name="servicetech" value="Service Technician"><br>
+                <input type="text" id="Date" name="date" value="Date"><br>
+                <input type="text" id="message" name="message" value="Message"><br>
+                <button class="btn btn-danger">Submit</button>
+            </form>
+        </div>
+        <div class="image-section">
+            <img src="book.png" alt="Booking Image">
+        </div>
+    </div>
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section logo-section">
+                <img src="logo.png" alt="Habib Automotive Logo">
+            </div>
+            <div class="footer-section">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="booking.html">Book An Appointment</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacts</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 6521 Russell Road, Ottawa, ON</p>
+                <p><i class="fas fa-phone"></i> 343-297-9944</p>
+                <p><i class="fas fa-envelope"></i> HabibAuto@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Business Hours</h4>
+                <p>Monday - Friday: 10 am - 9 pm</p>
+                <p>Saturday-Sunday: 8 am - 5 pm</p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 All Rights Reserved</p>
+        </div>
+    </footer>
+
+    <!-- Bootstrap JS -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>

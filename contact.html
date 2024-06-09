@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Habib Automotive</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&display=swap" rel="stylesheet">
+    <link href=https://fonts.google.com/specimen/Roboto?query=roboto+rel="stylesheet">
+    <style>
+        * { box-sizing: border-box; }
+        body { 
+            margin: 0;
+            font-family: Bebas Neue,roboto,Arial, Helvetica, sans-serif;
+            background-color: #f4f4f4;
+        }
+
+        .header {
+            overflow: hidden;
+            background-color: #f1f1f1;
+            padding: 20px 10px;
+            display: flex;
+            align-items: center;
+            justify-content: space-between;
+        }
+
+        .header .logo {
+            display: flex;
+            align-items: center;
+            text-decoration: none;
+            color: black;
+        }
+
+        .header .logo img {
+            max-height: 80px;
+            margin-right: 20px;
+        }
+
+        .header a {
+            color: black;
+            text-align: center;
+            padding: 12px;
+            text-decoration: none;
+            font-size: 18px; 
+            line-height: 25px;
+            border-radius: 4px;
+        }
+
+        .header a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+
+        .header a.active {
+            background-color: rgb(255, 75, 30);
+            color: white;
+        }
+
+        .header-right {
+            display: flex;
+        }
+
+        .footer {
+            background-color: #222; /* Dark background for the footer */
+            color: #fff; /* White text color */
+            font-family: Arial, sans-serif;
+            padding: 40px 0;
+        }
+
+        .footer .container {
+            display: flex;
+            justify-content: space-around;
+            padding: 0 10%;
+        }
+
+        .footer-section {
+            margin: 10px;
+        }
+
+        .footer-section h4 {
+            color: #ccc; /* Light gray for headings */
+        }
+
+        .footer-section ul {
+            list-style: none;
+            padding: 0;
+        }
+
+        .footer-section ul li a {
+            color: #fff;
+            text-decoration: none;
+            transition: color 0.3s;
+        }
+
+        .footer-section ul li a:hover {
+            color: #f00; /* Red on hover */
+        }
+
+        .footer-section p {
+            margin: 5px 0;
+        }
+
+        .social-icons a {
+            color: #fff;
+            margin-right: 10px;
+        }
+
+        .social-icons a i {
+            font-size: 1.2em; /* Larger icons for social media */
+        }
+
+        .footer-bottom {
+            text-align: center;
+            margin-top: 20px;
+            border-top: 1px solid #333; /* Subtle top border for bottom area */
+            padding-top: 10px;
+        }
+
+        @media (max-width: 768px) {
+            .footer .container {
+                flex-direction: column;
+                align-items: center;
+                text-align: center;
+            }
+
+            .footer-section {
+                margin-bottom: 20px;
+            }
+        }
+
+        .contact-section {
+            display: flex;
+            align-items: center;
+            justify-content: space-around;
+            text-align: center;
+        }
+
+        .info-blocks {
+            display: flex;
+            flex-direction: column;
+            background: white;
+            padding: 20px;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+            border-radius: 8px;
+        }
+
+        .contact-info, .business-hours {
+            margin-bottom: 20px;
+        }
+
+        .contact-info h2, .business-hours h2 {
+            color: #333;
+            font-size: 24px;
+        }
+
+        p {
+            color: #666;
+            font-size: 18px;
+            line-height: 1.5;
+        }
+
+        .image-section img {
+            max-width: 100%; /* Ensure the image fits within the container */
+            height: 450px;
+            border-radius: 8px;
+            margin-bottom: 80px;
+            margin-top: 40px;
+        }
+
+    </style>
+</head>
+<body>
+    <div class="header">  
+        <a href="index.html" class="logo">  
+            <img src="logo.png" alt="Logo">
+            <p class="slogan">"Elevate Your Ride: Expert Detailing, Tinting, Tires, and Rims!”</p>       
+        </a>
+        <div class="header-right">
+            <a class="active" href="index.html">Home</a>
+            <a href="booking.html">Book An Appointment!</a>
+            <a href="services.html">Services</a>
+            <a href="contact.html">Contact</a>
+            <a href="about.html">About Us</a>
+        </div>
+    </div>
+
+    <div class="contact-section">
+        <h1>Contact<span style="color: red;"> Information</h1>
+        <div class="info-blocks">
+            <div class="contact-info">
+                <h2>Habib Automotive</h2>
+                <p>6521 Russell Road,<br>Ottawa, ON</p>
+                <p>343-297-9944</p>
+                <p>HabibAuto@gmail.com</p>
+            </div>
+            <div class="business-hours">
+                <h2>Business Hours</h2>
+                <p>Monday - Friday: 10 am - 9 pm</p>
+                <p>Saturday - Sunday: 8 am - 5 pm</p>
+            </div>
+        </div>
+        <div class="image-section">
+            <img src="map.png" alt="Map">
+            <img src="image 2.png" alt="Map">
+        </div>
+    </div>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-section logo-section">
+                <img src="logo.png" alt="Habib Automotive Logo">
+            </div>
+            <div class="footer-section">
+                <h4>Information</h4>
+                <ul>
+                    <li><a href="index.html">Main</a></li>
+                    <li><a href="booking.html">Book An Appointment</a></li>
+                    <li><a href="services.html">Services</a></li>
+                    <li><a href="contact.html">Contact</a></li>
+                    <li><a href="about.html">About Us</a></li>
+                </ul>
+            </div>
+            <div class="footer-section">
+                <h4>Contacts</h4>
+                <p><i class="fas fa-map-marker-alt"></i> 6521 Russell Road, Ottawa, ON</p>
+                <p><i class="fas fa-phone"></i> 343-297-9944</p>
+                <p><i class="fas fa-envelope"></i> HabibAuto@gmail.com</p>
+            </div>
+            <div class="footer-section">
+                <h4>Business Hours</h4>
+                <p>Monday - Friday: 10 am - 9 pm</p>
+                <p>Saturday-Sunday: 8 am - 5 pm</p>
+            </div>
+
+        </div>
+        <div class="footer-bottom">
+            <p>© 2024 All Rights Reserved</p>
+        </div>
+    </footer>
+    
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+</body>
+</html>
